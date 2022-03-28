@@ -36,52 +36,37 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: [
-                    Icon(
+              Card(
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.phone,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
+                    title: Text(
                       '+55 81 123 456 789',
                       style: TextStyle(
-                        color: Colors.teal[900],
-                        fontFamily: 'SourceSansPro',
+                        fontFamily: 'Source Sans Pro',
                         fontSize: 20,
+                        color: Colors.teal[900],
                       ),
                     ),
-                  ],
-                ),
-              ),
-              Container(
-                color: Colors.white,
+                  )),
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'email@email.com',
+                    style: TextStyle(
+                      color: Colors.teal[900],
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20,
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'email@email.com',
-                      style: TextStyle(
-                        color: Colors.teal[900],
-                        fontFamily: 'SourceSansPro',
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
